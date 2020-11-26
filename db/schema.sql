@@ -3,16 +3,24 @@ CREATE DATABASE employeeRoster_db;
 
 USE employeeRoster_db;
 
-CREATE TABLE tbd (
-  
+CREATE TABLE department (
+  id INT NOT NULL auto_increment PRIMARY KEY,
+  dept_name VARCHAR(30)
 );
 
-CREATE TABLE tbd (
-  
+CREATE TABLE employee_role (
+  id INT NOT NULL auto_increment PRIMARY KEY,
+  title
+  salary
+  department_id
 );
 
-CREATE TABLE tbd (
-  
+CREATE TABLE employee (
+  id INT NOT NULL auto_increment PRIMARY KEY,
+  first_name
+  last_name
+  role_id
+  manager_id
 );
 
 

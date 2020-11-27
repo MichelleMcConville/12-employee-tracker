@@ -5,9 +5,9 @@ const inquirer = require("inquirer");
 const mysql = require("mysql");
 const table = require("console.table");
 
-const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmpByRole } = require("./scripts/view");
+const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr } = require("./scripts/view");
 const { addDept, addRole, addEmployee } = require("./scripts/add");
-const { updateEmployee, updateRole } = require("./scripts/update");
+const { updateRole, updateEmployee } = require("./scripts/update");
 const { deleteDept, deleteRole, deleteEmployee } = require("./scripts/delete");
 
 // ==============================================================================

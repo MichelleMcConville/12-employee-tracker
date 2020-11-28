@@ -19,3 +19,8 @@ const connect = mysql.createConnection({
 // ==============================================================================
 // FUNCTIONS
 // ==============================================================================
+function addDept() {}
+
+function addRole() {}
+
+function addEmployee() {}

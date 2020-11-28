@@ -92,9 +92,11 @@ function start() {
         deleteDept();
         break;
       case "Exit":
-
+        rosterChange();
         break;
     }
   });
 }
+
+start();
 

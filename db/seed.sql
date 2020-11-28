@@ -42,6 +42,7 @@ VALUES
   ('The Bloody',      'Baron',      '7', 'null'),
   ('The Fat',         'Friar',      '7', 'null'),
   ('The Gray',        'Lady',       '7', 'null'),
-  ('Nearly Headless', 'Nick',       '7', 'null'),
+  ('Nearly Headless', 'Nick',       '7', 'null');
+  
 
   

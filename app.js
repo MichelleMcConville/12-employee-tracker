@@ -49,6 +49,52 @@ function start() {
       "Delete Department",
       "Exit",
     ],
+  })
+  .then(res => {
+    switch (res.choice) {
+      case "View All Employees":
+        viewAllEmployees();
+        break;
+      case "View All Employee Roles":
+        viewAllRoles();
+        break;
+      case "View All Departments":
+        viewAllDept();
+        break;  
+      case "View Employees by Manager":
+        viewEmployeesByMgr();
+        break;
+      case "View Total Budget by Dept":
+        viewTotalBudgetByDept();
+        break;
+      case "Add Employee":
+        addEmployee();
+        break;
+      case "Add Employee Role":
+        addRole();
+        break;
+      case "Add Department":
+        addDept();
+        break;
+      case "Update Employee":
+        updateEmployee();
+        break;
+      case "Update Employee Role":
+        updateRole();
+        break;
+      case "Delete Employee":
+        deleteEmployee();
+        break;
+      case "Delete Role":
+        deleteRole();
+        break;
+      case "Delete Department":
+        deleteDept();
+        break;
+      case "Exit":
+
+        break;
+    }
   });
 }
 

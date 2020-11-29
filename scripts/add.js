@@ -26,10 +26,10 @@ function addDept() {
       type: "input",
       message: "What is the department name?"
     })
-    .then(answer => {
+    .then(response => {
       connection.query("INSERT INTO department SET dept_name ?",
         {
-          dept_name: res.dept_name,
+          dept_name: response.dept_name,
         })
     })
     .then(() => console.log("Department Added!"))

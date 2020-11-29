@@ -27,7 +27,7 @@ function addDept() {
       message: "What is the department name?"
     })
     .then(response => {
-      connection.query("INSERT INTO department SET dept_name ?",
+      connection.query("INSERT INTO department SET ?",
         {
           dept_name: response.dept_name,
         })
@@ -53,7 +53,17 @@ function addRole() {
       type: "list",
       message: "What is the department number for this role?",
     },
-  ]);
+  ])
+  then(response => {
+    connection.query("INSERT INTO employee_role SET dept_name ?",
+      {
+        title: response.title,
+        salary: response.salary,
+        department_id: response.department_id,
+      })
+  })
+  .then(() => console.log("Role Added!"))
+  .then(() => start());
 }
 
 //function addEmployee() {}

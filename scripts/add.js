@@ -20,21 +20,22 @@ const connect = mysql.createConnection({
 // FUNCTIONS
 // ==============================================================================
 function addDept() {
-  inquirer.prompt(
+  inquirer.prompt([
     {
       name: "dept_name",
       type: "input",
       message: "What is the department name?"
-    })
-    .then(response => {
-      connection.query("INSERT INTO department SET ?",
-        {
-          dept_name: response.dept_name,
-        })
-    })
-    .then(() => console.log("Department Added!"))
-    .then(() => start());
-  }
+    }
+  ])
+  .then(response => {
+    connection.query("INSERT INTO department SET ?",
+      {
+        dept_name: response.dept_name,
+      })
+  })
+  .then(() => console.log("Department Added!"))
+  .then(() => start());
+}
 
 function addRole() {
   inquirer.prompt([
@@ -54,8 +55,8 @@ function addRole() {
       message: "What is the department number for this role?",
     },
   ])
-  then(response => {
-    connection.query("INSERT INTO employee_role SET dept_name ?",
+  .then(response => {
+    connection.query("INSERT INTO employee_role SET ?",
       {
         title: response.title,
         salary: response.salary,
@@ -66,5 +67,39 @@ function addRole() {
   .then(() => start());
 }
 
-//function addEmployee() {}
+function addEmployee() {
+  inquirer.prompt([
+    {
+      name: "first_name",
+      type: "input",
+      message: "What is the employee's first name?",
+    },
+    {
+      name: "last_name",
+      type: "input",
+      message: "What is the employee's last name?",
+    },
+    {
+      name: "role_id",
+      type: "list",
+      message: "role_id",
+    },
+    {
+      name: "manager_id",
+      type: "list",
+      message: "manager_id",
+    },
+  ])
+  .then(response => {
+    connection.query("INSERT INTO employee SET ?",
+      {
+        first_name: response.first_name,
+        last_name: response.last_name,
+        role_id: response.role_id,
+        manager_id: response.manager_id,
+      })
+  })
+  .then(() => console.log("Employee Added!"))
+  .then(() => start());
+}
 

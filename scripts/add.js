@@ -36,7 +36,25 @@ function addDept() {
   )
 }
 
-//function addRole() {}
+function addRole() {
+  inquirer.prompt([
+    {
+      name: "title",
+      type: "input",
+      message: "What is the name of the role?",
+    },
+    {
+      name: "salary",
+      type: "input",
+      message: "What is the salary for this role?",
+    },
+    {
+      name: "department_id",
+      type: "list",
+      message: "What is the department number for this role?",
+    },
+  ]);
+}
 
 //function addEmployee() {}
 

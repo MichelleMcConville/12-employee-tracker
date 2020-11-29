@@ -20,21 +20,21 @@ const connect = mysql.createConnection({
 // FUNCTIONS
 // ==============================================================================
 function addDept() {
-  inquirer.prompt([
+  inquirer.prompt(
     {
       name: "dept_name",
       type: "input",
-      message: "What is the department name?",
-    },
-  ])
-  // do we use res or answer??
-  .then(res => {
-    connection.query("INSERT INTO department SET dept_name ?",
-      {
-        dept_name: res.dept_name,
-      },
-  )
-}
+      message: "What is the department name?"
+    })
+    .then(answer => {
+      connection.query("INSERT INTO department SET dept_name ?",
+        {
+          dept_name: res.dept_name,
+        })
+    })
+    .then(() => console.log("Department Added!"))
+    .then(() => start());
+  }
 
 function addRole() {
   inquirer.prompt([

@@ -6,17 +6,17 @@ const mysql = require("mysql");
 const table = require("console.table");
 
 // ==============================================================================
-// DATABASE - Create the connection information for the sql db
+// DATABASE - Create connection information for the SQL DB
 // ==============================================================================
 const connect = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
   password: "password!",
-  database: "employeeRoster_db",
+  database: "employee_roster",
 });
 
-// Connect to the mySQL Server and the DB
+// Connect to the mySQL Server & the DB
 connection.connect((err) => {
   if (err) throw err;
   start();

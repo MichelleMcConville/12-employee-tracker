@@ -5,7 +5,8 @@ VALUES
   ('Hufflepuff'),
   ('Ravenclaw'),
   ('Slytherin'),
-  ('Alumni');
+  ('Alumni'),
+  ('None');
 
 INSERT INTO role (title, salary, dept_id)
 VALUES
@@ -17,11 +18,12 @@ VALUES
   ('Support Staff',       50000,  3),
   ('Student',             0,      4),
   ('Ghosts',              0,      5),
-  ('Alumni',              0,      6);
-
+  ('Alumni',              0,      6),
+  ('None',                0,      7);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
+  ('No',              'Manager',     10,  null),
   ('Godrick',         'Gryffindor',   1,  null),
   ('Albus',           'Dumbledore',   2,  null),
   ('Minerva',         'McGonagall',   4,  2),

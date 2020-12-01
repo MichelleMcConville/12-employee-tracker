@@ -67,7 +67,7 @@ function start() {
         viewTotalBudgetByDept();
         break;
       case "Add Employee":
-        addEmployee();
+        addEmployee(connection, start);
         break;
       case "Add Role":
         addRole();

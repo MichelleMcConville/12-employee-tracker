@@ -54,8 +54,8 @@ function start() {
       case "View All Employees":
         viewAllEmployees();
         break;
-      case "View All Employee Roles":
-        viewAllRoles();
+      case "View All Roles":
+        viewAllRoles(connection, start);
         break;
       case "View All Departments":
         viewAllDept(connection, start);

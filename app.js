@@ -61,7 +61,7 @@ function start() {
         viewAllDept(connection, start);
         break;  
       case "View Employees by Manager":
-        viewEmployeesByMgr();
+        viewEmployeesByMgr(connection, start);
         break;
       case "View Total Budget by Dept":
         viewTotalBudgetByDept();

@@ -3,7 +3,6 @@
 // ==============================================================================
 const inquirer = require("inquirer");
 const mysql = require("mysql");
-const table = require("console.table");
 
 const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr, viewTotalBudgetByDept } = require("./lib/view");
 const { addDept, addRole, addEmployee } = require("./lib/add");
@@ -13,7 +12,7 @@ const { deleteDept, deleteRole, deleteEmployee } = require("./lib/delete");
 // ==============================================================================
 // DATABASE - Create connection information for the SQL DB
 // ==============================================================================
-const connect = mysql.createConnection({
+const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",

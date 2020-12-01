@@ -5,6 +5,11 @@ const inquirer = require("inquirer");
 const mysql = require("mysql");
 const table = require("console.table");
 
+const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr, viewTotalBudgetByDept } = require("./lib/view");
+const { addDept, addRole, addEmployee } = require("./lib/add");
+const { updateRole, updateEmployee } = require("./lib/update");
+const { deleteDept, deleteRole, deleteEmployee } = require("./lib/delete");
+
 // ==============================================================================
 // DATABASE - Create connection information for the SQL DB
 // ==============================================================================
@@ -46,7 +51,7 @@ function start() {
     ],
   })
   .then(userInput => {
-    switch (res.choice) {
+    switch (userInput.choice) {
       case "View All Employees":
         viewAllEmployees();
         break;

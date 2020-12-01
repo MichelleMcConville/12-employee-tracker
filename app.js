@@ -52,7 +52,7 @@ function start() {
   .then(userInput => {
     switch (userInput.choice) {
       case "View All Employees":
-        viewAllEmployees();
+        viewAllEmployees(connection, start);
         break;
       case "View All Roles":
         viewAllRoles(connection, start);

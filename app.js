@@ -32,21 +32,21 @@ function start() {
     name: "actions",
     type: "list",
     message: "Please select one of the following actions.",
-    choices: [
-      "View All Employees",
-      "View All Roles",
-      "View All Departments",
-      "View Employees by Manager",
-      "View Total Budget by Dept",
-      "Add Employee",
-      "Add Role",
-      "Add Department",
-      "Update Employee",
-      "Update Role",
-      "Delete Employee",
-      "Delete Role",
-      "Delete Department",
-      "Exit",
+    choices: ['\n'
+      ,"View All Employees"
+      ,"View All Roles"
+      ,"View All Departments"
+      ,"View Employees by Manager"
+      ,"View Total Budget by Dept"
+      ,"Add Employee"
+      ,"Add Role"
+      ,"Add Department"
+      ,"Update Employee"
+      ,"Update Role"
+      ,"Delete Employee"
+      ,"Delete Role"
+      ,"Delete Department"
+      ,"Exit"
     ],
   })
   .then(userInput => {

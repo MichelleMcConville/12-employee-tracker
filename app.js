@@ -70,10 +70,10 @@ function start() {
         addEmployee(connection, start);
         break;
       case "Add Role":
-        addRole();
+        addRole(connection, start);
         break;
       case "Add Department":
-        addDept();
+        addDept(connection, start);
         break;
       case "Update Employee":
         updateEmployee();

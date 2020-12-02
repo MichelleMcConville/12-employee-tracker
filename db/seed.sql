@@ -1,25 +1,26 @@
 INSERT INTO departments (dept_name)
 VALUES
+  ('None'),
   ('Hogwarts'),
   ('Gryffindor'),
   ('Hufflepuff'),
   ('Ravenclaw'),
   ('Slytherin'),
-  ('Alumni'),
-  ('None');
+  ('Alumni');
 
 INSERT INTO roles (title, salary, dept_id)
 VALUES
-  ('Founder',             1000,   1),
-  ('Headmaster',          200000, 2),
-  ('Deputy',              135000, 3),
-  ('Head of House',       120000, 4),
-  ('Teaching Staff',      80000,  5),
+  ('None',                0,      1),
+  ('Founder',             1000,   2),
+  ('Headmaster',          200000, 3),
+  ('Deputy',              135000, 4),
+  ('Head of House',       120000, 5),
+  ('Teaching Staff',      80000,  6),
   ('Support Staff',       50000,  3),
   ('Student',             0,      4),
   ('Ghosts',              0,      5),
-  ('Alumni',              0,      6),
-  ('None',                0,      7);
+  ('Alumni',              0,      7);
+
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES

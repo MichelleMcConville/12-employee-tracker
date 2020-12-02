@@ -1,4 +1,4 @@
-INSERT INTO department (dept_name)
+INSERT INTO departments (dept_name)
 VALUES
   ('Hogwarts'),
   ('Gryffindor'),
@@ -8,7 +8,7 @@ VALUES
   ('Alumni'),
   ('None');
 
-INSERT INTO role (title, salary, dept_id)
+INSERT INTO roles (title, salary, dept_id)
 VALUES
   ('Founder',             1000,   1),
   ('Headmaster',          200000, 2),
@@ -21,7 +21,7 @@ VALUES
   ('Alumni',              0,      6),
   ('None',                0,      7);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
   ('No',              'Manager',     10,  null),
   ('Godrick',         'Gryffindor',   1,  null),

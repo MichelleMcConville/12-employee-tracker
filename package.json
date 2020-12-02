@@ -2,9 +2,10 @@
   "name": "12-employee-tracker",
   "version": "1.0.0",
   "description": "Keeps tracks of company employees",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/MichelleMcConville/12-employee-tracker#readme",
   "dependencies": {
+    "console-table-printer": "^2.5.1",
     "console.table": "^0.10.0",
     "inquirer": "^7.3.3",
     "mysql": "^2.18.1"

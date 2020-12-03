@@ -82,7 +82,7 @@ function start() {
         updateRole();
         break;
       case "Delete Employee":
-        deleteEmployee();
+        deleteEmployee(connection, start);
         break;
       case "Delete Role":
         deleteRole();

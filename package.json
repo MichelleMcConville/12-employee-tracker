@@ -21,6 +21,7 @@
   "dependencies": {
     "console-table-printer": "^2.5.1",
     "console.table": "^0.10.0",
+    "gradient-string": "^1.2.0",
     "inquirer": "^7.3.3",
     "mysql": "^2.18.1"
   }

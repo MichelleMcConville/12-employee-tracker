@@ -32,8 +32,8 @@ function start() {
     name: "actions",
     type: "list",
     message: "Please select one of the following actions.",
-    choices: ['\n'
-      , "View All Employees"
+    choices: [
+        "View All Employees"
       , "View All Roles"
       , "View All Departments"
       , "View Employees by Manager"

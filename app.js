@@ -6,7 +6,7 @@ const mysql = require("mysql");
 
 const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr, viewTotalBudgetByDept } = require("./lib/view");
 const { addDept, addRole, addEmployee } = require("./lib/add");
-const { updateRole, updateEmployee } = require("./lib/update");
+const { updateEmployeeRole, updateEmployeeMgr } = require("./lib/update");
 const { deleteDept, deleteRole, deleteEmployee } = require("./lib/delete");
 
 // ==============================================================================
@@ -76,10 +76,10 @@ function start() {
         addDept(connection, start);
         break;
       case "Update Employee Role":
-        updateRole(connection, start);
+        updateEmployeeRole(connection, start);
         break;
       case "Update Employee Manager":
-        updateEmployee();
+        updateEmployeeMgr();
         break;
       case "Delete Employee":
         deleteEmployee(connection, start);

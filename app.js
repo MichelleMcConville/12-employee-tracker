@@ -85,7 +85,7 @@ function start() {
         deleteEmployee(connection, start);
         break;
       case "Delete Role":
-        deleteRole(connection, start));
+        deleteRole(connection, start);
         break;
       case "Delete Department":
         deleteDept();

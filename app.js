@@ -91,8 +91,14 @@ function start() {
         deleteDept();
         break;
       case "Exit":
-        rosterChange();
+        exitRoster();
         break;
     }
   });
 }
+
+const exitRoster = () => {
+  console.log("Exiting Roster!")
+  connection.end();
+}
+

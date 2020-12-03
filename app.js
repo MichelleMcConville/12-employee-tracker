@@ -41,8 +41,8 @@ function start() {
       , "Add Employee"
       , "Add Role"
       , "Add Department"
-      , "Update Employee"
-      , "Update Role"
+      , "Update Employee Role"
+      , "Update Employee Manager"
       , "Delete Employee"
       , "Delete Role"
       , "Delete Department"
@@ -75,11 +75,11 @@ function start() {
       case "Add Department":
         addDept(connection, start);
         break;
-      case "Update Employee":
-        updateEmployee();
+      case "Update Employee Role":
+        updateRole(connection, start);
         break;
-      case "Update Role":
-        updateRole();
+      case "Update Employee Manager":
+        updateEmployee();
         break;
       case "Delete Employee":
         deleteEmployee(connection, start);

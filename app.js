@@ -6,7 +6,7 @@ const mysql = require("mysql");
 
 const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr, viewTotalBudgetByDept } = require("./lib/view");
 const { addDept, addRole, addEmployee } = require("./lib/add");
-const { updateEmployeeRole, updateEmployeeMgr } = require("./lib/update");
+const { updateEmployeeRole, updateEmployeeMgr, updateEmployeeDept } = require("./lib/update");
 const { deleteDept, deleteRole, deleteEmployee } = require("./lib/delete");
 
 // ==============================================================================
@@ -43,6 +43,7 @@ function start() {
       , "Add Department"
       , "Update Employee Role"
       , "Update Employee Manager"
+      , "Update Employee Department"
       , "Delete Employee"
       , "Delete Role"
       , "Delete Department"
@@ -81,6 +82,9 @@ function start() {
       case "Update Employee Manager":
         updateEmployeeMgr();
         break;
+      case "Update Employee Department":
+        updateEmployeeDept();
+        break;
       case "Delete Employee":
         deleteEmployee(connection, start);
         break;
@@ -98,7 +102,7 @@ function start() {
 }
 
 const exitRoster = () => {
-  console.log("Exiting Roster!")
+  console.log("Goodbye!")
   connection.end();
 }
 

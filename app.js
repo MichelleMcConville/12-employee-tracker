@@ -80,7 +80,7 @@ function start() {
         updateEmployeeRole(connection, start);
         break;
       case "Update Employee Manager":
-        updateEmployeeMgr();
+        updateEmployeeMgr(connection, start);
         break;
       case "Update Employee Department":
         updateEmployeeDept();

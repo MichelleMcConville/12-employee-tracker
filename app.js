@@ -83,7 +83,7 @@ function start() {
         updateEmployeeMgr(connection, start);
         break;
       case "Update Employee Department":
-        updateEmployeeDept();
+        updateEmployeeDept(connection, start);
         break;
       case "Delete Employee":
         deleteEmployee(connection, start);
@@ -92,7 +92,7 @@ function start() {
         deleteRole(connection, start);
         break;
       case "Delete Department":
-        deleteDept();
+        deleteDept(connection, start);
         break;
       case "Exit":
         exitRoster();

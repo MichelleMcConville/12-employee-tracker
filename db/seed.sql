@@ -25,18 +25,18 @@ VALUES
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-  ('No',              'Manager',     10,  null),
-  ('Godrick',         'Gryffindor',   1,  null),
-  ('Albus',           'Dumbledore',   2,  null),
-  ('Minerva',         'McGonagall',   4,  3),
-  ('Severus',         'Snape',        4,  3),
-  ('Filius',          'Flitwick',     4,  3),
-  ('Pomona',          'Sprout',       4,  3),
-  ('Rubeus',          'Hagrid',       5,  3),
-  ('Argus',           'Filtch',       6,  3),
-  ('Hermione',        'Granger',      7,  4),
-  ('Cedric',          'Diggory',      7,  6),
-  ('Luna',            'Lovegood',     7,  7),
-  ('Draco',           'Malfoy',       7,  5),
-  ('Nearly Headless', 'Nick',         8,  null),
-  ('Sirius',          'Black',        9,  null);
+  ('No',              'Manager',      1,  null),
+  ('Godrick',         'Gryffindor',   2,  null),
+  ('Albus',           'Dumbledore',   3,  null),
+  ('Minerva',         'McGonagall',   5,  3),
+  ('Severus',         'Snape',        5,  3),
+  ('Filius',          'Flitwick',     5,  3),
+  ('Pomona',          'Sprout',       5,  3),
+  ('Rubeus',          'Hagrid',       6,  3),
+  ('Argus',           'Filtch',       7,  3),
+  ('Hermione',        'Granger',      8,  4),
+  ('Cedric',          'Diggory',      8,  6),
+  ('Luna',            'Lovegood',     8,  7),
+  ('Draco',           'Malfoy',       8,  5),
+  ('Nearly Headless', 'Nick',         9,  null),
+  ('Sirius',          'Black',       10,  null);

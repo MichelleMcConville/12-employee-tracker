@@ -5,11 +5,11 @@ const inquirer = require("inquirer");
 const mysql = require("mysql");
 const figlet = require('figlet');
 const gradient = require('gradient-string');
-// const chalkAnimation = require('chalk-animation');
+//const chalkAnimation = require('chalk-animation');
 
 const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr, viewTotalBudgetByDept } = require("./lib/view");
 const { addDept, addRole, addEmployee } = require("./lib/add");
-const { updateEmployeeRole, updateEmployeeMgr, updateEmployeeDept } = require("./lib/update");
+const { updateEmployeeRole, updateEmployeeMgr } = require("./lib/update");
 const { deleteDept, deleteRole, deleteEmployee } = require("./lib/delete");
 
 // ==============================================================================
@@ -23,19 +23,17 @@ const connection = mysql.createConnection({
   database: "employee_roster",
 });
 
-// Connect to the mySQL Server & the DB
 connection.connect((err) => {
   if (err) throw err;
   figletStart();
+  console.log(" ");
 });
 
 function start() {
-  //console.log(gradient.pastel("Welcome to the Employee Management System"));
-  //chalkAnimation.rainbow("Welcome to the Employee Management System");
   inquirer.prompt({
     name: "actions",
     type: "list",
-    message: gradient.pastel("Please select one of the following actions."),
+    message: gradient.retro("Please select one of the following actions."),
     choices: [
         "View All Employees"
       , "View All Roles"
@@ -102,9 +100,9 @@ function start() {
 }
 
 const exitRoster = () => {
-  // console.log("Goodbye!")
-  // console.log(gradient.rainbow('Goodbye!'));
+  console.log(" ");
   figletEnd();
+  console.log(" ");
   connection.end();
 };
 
@@ -112,7 +110,7 @@ const figletStart = function () {
   figlet.text(
     "Employee Roster",
     {
-      font: "Standard",
+      font: "ANSI Shadow",
       horizontalLayout: "Fitted",
       verticalLayout: "Fitted",
       width: 200,
@@ -125,7 +123,7 @@ const figletStart = function () {
         return;
       }
       console.log(gradient.pastel(data));
-
+      console.log(" ");
       start();
     }
   );
@@ -135,7 +133,7 @@ const figletEnd = function () {
   figlet.text(
     "Exit",
     {
-      font: "Standard",
+      font: "Blocks",
       horizontalLayout: "Fitted",
       verticalLayout: "Fitted",
       width: 200,
@@ -147,7 +145,7 @@ const figletEnd = function () {
         console.dir(err);
         return;
       }
-      console.log(gradient.pastel(data));
+      console.log(gradient.rainbow(data));
     }
   );
 }

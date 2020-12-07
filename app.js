@@ -3,6 +3,9 @@
 // ==============================================================================
 const inquirer = require("inquirer");
 const mysql = require("mysql");
+const figlet = require('figlet');
+const gradient = require('gradient-string');
+// const chalkAnimation = require('chalk-animation');
 
 const { viewAllDept, viewAllRoles, viewAllEmployees, viewEmployeesByMgr, viewTotalBudgetByDept } = require("./lib/view");
 const { addDept, addRole, addEmployee } = require("./lib/add");
@@ -23,15 +26,16 @@ const connection = mysql.createConnection({
 // Connect to the mySQL Server & the DB
 connection.connect((err) => {
   if (err) throw err;
-  start();
+  figletStart();
 });
 
 function start() {
-  console.log("Welcome to the Employee Management System");
+  //console.log(gradient.pastel("Welcome to the Employee Management System"));
+  //chalkAnimation.rainbow("Welcome to the Employee Management System");
   inquirer.prompt({
     name: "actions",
     type: "list",
-    message: "Please select one of the following actions.",
+    message: gradient.pastel("Please select one of the following actions."),
     choices: [
         "View All Employees"
       , "View All Roles"
@@ -102,7 +106,52 @@ function start() {
 }
 
 const exitRoster = () => {
-  console.log("Goodbye!")
+  // console.log("Goodbye!")
+  // console.log(gradient.rainbow('Goodbye!'));
+  figletEnd();
   connection.end();
-}
+};
 
+const figletStart = function () {
+  figlet.text(
+    "Employee Roster",
+    {
+      font: "Standard",
+      horizontalLayout: "Fitted",
+      verticalLayout: "Fitted",
+      width: 200,
+      whitespaceBreak: true,
+    },
+    function (err, data) {
+      if (err) {
+        console.log("Something went wrong...");
+        console.dir(err);
+        return;
+      }
+      console.log(gradient.pastel(data));
+
+      start();
+    }
+  );
+};
+
+const figletEnd = function () {
+  figlet.text(
+    "Exit",
+    {
+      font: "Standard",
+      horizontalLayout: "Fitted",
+      verticalLayout: "Fitted",
+      width: 200,
+      whitespaceBreak: true,
+    },
+    function (err, data) {
+      if (err) {
+        console.log("Something went wrong...");
+        console.dir(err);
+        return;
+      }
+      console.log(gradient.pastel(data));
+    }
+  );
+}

@@ -47,7 +47,6 @@ function start() {
       , "Add Department"
       , "Update Employee Role"
       , "Update Employee Manager"
-      , "Update Employee Department"
       , "Delete Employee"
       , "Delete Role"
       , "Delete Department"
@@ -85,9 +84,6 @@ function start() {
         break;
       case "Update Employee Manager":
         updateEmployeeMgr(connection, start);
-        break;
-      case "Update Employee Department":
-        updateEmployeeDept(connection, start);
         break;
       case "Delete Employee":
         deleteEmployee(connection, start);

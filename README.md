@@ -4,43 +4,57 @@
 
 ## Description
 
-Application for managing a companies employee.
+A simple CLI application that can be used to create an employee roster (CMS)
+
+## Preview
+
+| <div align="center">***Demo***</div>| <div align="center">***Screenshot***</div>|
+| ----------------------------------- | ----------------------------------------- |
+| ![Demo](./docs/tbd.gif)             | ![SC](./docs/tbd.jpg)                     |
 
 ## Table of Contents ✨
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-* [License](#license)
+* [🛠️ Installation](#installation)
+* [⚙️ Usage](#usage)
+* [🤝 Contributing](#contributing)
+* [✅ Tests](#tests)
+* [❓ Questions](#questions)
+* [📝 License](#license)
 
-## Installation
+## Installation 🛠️ <a name="installation"></a>
 
-npm init -y, npm i inquirer, npm i mysql, npm i console.table
+```node
+Type the following two npm commands separately in the Integrated Terminal:
+  1. npm init -y
+  2. npm i inquirer mysql console-printer-table figlet gradient-string
+```
 
-## Usage
+## Usage ⚙️ <a name="usage"></a>
 
+`Open in Integrated Terminal`
+
+```node
+Type the following command to start the application:
 npm start
+```
 
-## Contributing
+## Contributing 🤝 <a name="contributing"></a>
 
 All contributions must be approved by owner
 
-## Tests
+## Tests ✅ <a name="tests"></a>
 
 There are currently no testing procedures for this application
 
-## Questions
+## Questions ❓ <a name="questions"></a>
 
 * 📧 If you have any questions please [**eMail**](mailto:dev.mchel@gmail.com) me
 * :octocat: Check out more of my work on [**GitHub**](https://github.com/MichelleMcConville)
 
-## License
+## License 📝 <a name="license"></a>
 
 This project is **`General Public License v2.0`** licensed
 
 ---
 
  Copyright ©️ 2020 🌷 Michelle McConville
-

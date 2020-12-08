@@ -19,9 +19,7 @@
   },
   "homepage": "https://github.com/MichelleMcConville/12-employee-tracker#readme",
   "dependencies": {
-    "chalk-animation": "^1.6.0",
     "console-table-printer": "^2.5.1",
-    "console.table": "^0.10.0",
     "figlet": "^1.5.0",
     "gradient-string": "^1.2.0",
     "inquirer": "^7.3.3",

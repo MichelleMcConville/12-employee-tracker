@@ -1,9 +1,9 @@
-# [12-employee-tracker](tbd) 🔗
+# [12-employee-tracker](https://github.com/MichelleMcConville/12-employee-tracker)
 
 ![Badge](https://8nxhgwjcvhpi.runkit.sh)
 ![Badge](https://wwmc4jkshecn.runkit.sh)
 ![Badge](https://e97ih4d3n516.runkit.sh)
-![Badge](https://mlqa5dts7wqy.runkit.sh)
+![Badge](https://nya2e6frf5g9.runkit.sh)
 ![Badge](https://fmc3nq4v4w6e.runkit.sh)
 ![Badge](https://1c8nmj421vly.runkit.sh)
 ![Badge](https://img.shields.io/badge/license-GPL%20v2-0526fc)
@@ -14,9 +14,9 @@ A simple CLI application that can be used to create an employee roster (CMS)
 
 ## Preview
 
-| <div align="center">***Demo***</div>| <div align="center">***Screenshot***</div>|
-| ----------------------------------- | ----------------------------------------- |
-| ![Demo](./docs/walkThru-12.gif)     | ![SC](./docs/employeeTracker.jpg)         |
+| ***Demo***                      | ***Screenshot***                  |
+| :-----------------------------: | :-------------------------------: |
+| ![Demo](./docs/walkThru-12.gif) | ![SC](./docs/employeeTracker.jpg) |
 
 ## Table of Contents ✨
 
